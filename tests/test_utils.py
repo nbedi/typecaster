@@ -131,5 +131,7 @@ class TestUtils(unittest.TestCase):
         self.assertEquals(feed_string, self.feed_string)
 
     def tearDown(self):
+        if os.path.exists('.temp.wav'):
+            os.remove('.temp.wav')
         if os.path.exists('.test_utils/'):
             shutil.rmtree('.test_utils/')

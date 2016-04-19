@@ -66,7 +66,6 @@ class Podcast(object):
         self.scheduled_jobs = {}
         self.update_rss_feed()
         self._scheduler = BackgroundScheduler()
-        self._scheduler.start()
 
     def add_episode(self, text, text_format, title, author, summary=None,
                     publish_date=None, synthesizer='watson', synth_args=None, sentence_break='. '):
@@ -143,6 +142,9 @@ class Podcast(object):
             self.add_episode(episode_text, text_format, episode_title, author, summary, datetime.utcnow(), synthesizer, synth_args, sentence_break)
 
         self.scheduled_jobs[title] = self._scheduler.add_job(add_episode, 'cron', id=title, **cron_args)
+
+        if not self._scheduler.running:
+            self._scheduler.start()
 
     def publish(self, titles):
         """
