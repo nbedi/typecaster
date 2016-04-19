@@ -92,7 +92,6 @@ class TestUtils(unittest.TestCase):
 
         audio = utils.text_to_speech(text=text, synthesizer=self.synthesizer, synth_args=self.synth_args, sentence_break=' ')
         sample = AudioSegment.from_wav('tests/test_files/test.wav')
-        audio.export('.test_utils/test.mp3', format='mp3')
 
         self.assertGreater(len(audio), len(sample) * 50)
 

@@ -190,7 +190,7 @@ class TestModels(unittest.TestCase):
         before_audio = AudioSegment.from_mp3(self.output_path + '/test_episode_1.mp3')
         before_length = len(before_audio)
 
-        self.podcast.episodes[episode_title].text = 'hello ' * 51
+        self.podcast.episodes[episode_title].text = 'hello ' * 60
 
         after_audio = AudioSegment.from_mp3(self.output_path + '/test_episode_1.mp3')
         after_length = len(after_audio)
