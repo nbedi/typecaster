@@ -39,6 +39,10 @@ Manually add and publish an episode to the podcast:
 
 Schedule dynamically generated episodes on your podcast:
 
+Note: scheduling will end when the process ends. This works best when run
+inside an existing application. Daemonizing scheduled jobs may be a feature in
+the future.
+
 .. code-block:: python
 
     from datetime import datetime
@@ -65,6 +69,9 @@ IBM API
 At the moment, typecaster only supports IBM Watson's text-to-speech API as a 
 synthesizer. To use the API, you must get credentials from IBM and pass them as
 `synth_args <#typecaster.models.Podcast.add_episode>`_.
+
+Right now, the API is free to use for the first million characters every month.
+That is about 7000 words per day. Additional characters are $0.02 per thousand.
 
 Learn more about getting credentials at `IBM's developer cloud <http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/getting_started/gs-credentials.shtml>`_.
 

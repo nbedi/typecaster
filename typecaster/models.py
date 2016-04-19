@@ -105,6 +105,9 @@ class Podcast(object):
         """
         Add and start a new scheduled job to dynamically generate podcasts.
 
+        Note: scheduling will end when the process ends. This works best when run
+        inside an existing application.
+
         :param text_source:
             A function that generates podcast text. Examples: a function that
             opens a file with today's date as a filename or a function that
