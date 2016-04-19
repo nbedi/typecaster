@@ -14,3 +14,11 @@ text and iTunes-friendly RSS feeds.
 .. image:: https://travis-ci.org/nbedi/typecaster.svg
     :target: https://travis-ci.org/nbedi/typecaster
     :alt: Build status
+
+.. image:: https://img.shields.io/pypi/l/typecaster.svg
+    :target: https://pypi.python.org/pypi/typecaster
+    :alt: License
+
+.. image:: https://img.shields.io/pypi/pyversions/agate.svg
+    :target: https://pypi.python.org/pypi/agate
+    :alt: Support Python versions
