@@ -1,0 +1,26 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Test Podcast</title>
+    <link>http://test.com</link>
+    <copyright />
+    <itunes:subtitle />
+    <itunes:author>Test Author</itunes:author>
+    <itunes:summary>This is a test podcast</itunes:summary>
+    <description>This is a test podcast</description>
+    <itunes:owner>
+      <itunes:name />
+      <itunes:email />
+    </itunes:owner>
+    <itunes:image />
+    <itunes:category>News</itunes:category>
+    <itunes:category>Sports</itunes:category>
+    <item>
+        <title>Test Episode 1</title>
+        <author>Test Episode Author</author>
+        <summary/>
+        <enclosure length="3884" type="audio/x-mp3" url="http://test.com/.test/test_episode_1.mp3"/>
+        <guid>http://test.com/.test/test_episode_1.mp3</guid>
+        <itunes:duration>00:00:0.9</itunes:duration>
+    </item>
+  </channel>
+</rss>
