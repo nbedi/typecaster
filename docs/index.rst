@@ -1,9 +1,17 @@
 
 .. include:: ../README.rst
 
+|
+
 ===============
 Getting started
 ===============
+
+To start, install typecaster with pip::
+
+    pip install typecaster
+    
+Create a podcast:
 
 .. code-block:: python
 
@@ -13,19 +21,26 @@ Getting started
                          author='Me', description='My typecaster podcast', 
                          output_path='.')
 
+Manually add and publish an episode to the podcast:
+
+.. code-block:: python
+
     # Load synthesizer arguments and credentials
     import json
     synth_args = json.load(open('params.json'))
 
-    # Manually add episode
+    # Add episode
     episode_text = open('script.txt').read()
     my_podcast.add_episode(episode_text, text_format='plain', title='Episode 1', 
                            author='Me', synth_args=synth_args)
 
     # Publish episode to RSS feed
     my_podcast.publish('Episode 1')
-    
-    # Schedule recurring episodes
+
+Schedule dynamically generated episodes on your podcast:
+
+.. code-block:: python
+
     from datetime import datetime
     
     def get_episode_text():
