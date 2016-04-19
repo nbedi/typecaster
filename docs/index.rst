@@ -66,12 +66,14 @@ the future.
 IBM API
 =======
 
-At the moment, typecaster only supports IBM Watson's text-to-speech API as a 
-synthesizer. To use the API, you must get credentials from IBM and pass them as
-`synth_args <#typecaster.models.Podcast.add_episode>`_.
+At the moment, typecaster only supports `IBM Watson's text-to-speech API <http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/text-to-speech.html>`_ 
+as a synthesizer. To use the API, you must get credentials from IBM and pass 
+them as `synth_args <#typecaster.models.Podcast.add_episode>`_.
 
 Right now, the API is free to use for the first million characters every month.
 That is about 7000 words per day. Additional characters are $0.02 per thousand.
+The API can accept 7 different languages and has a selection of voices for
+each language.
 
 Learn more about getting credentials at `IBM's developer cloud <http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/getting_started/gs-credentials.shtml>`_.
 
