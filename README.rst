@@ -6,6 +6,8 @@ Dynamically generate podcasts from text. Give typecaster your text and podcast
 details and it will generate mp3 episode files, Speech Synthesis Markup Language
 text and iTunes-friendly RSS feeds.
 
+Thanks to `OpenNews <https://opennews.org>`_ for their `support <https://opennews.org/what/community/convenings/>`_.
+
 
 * Documentation: http://typecaster.readthedocs.org/
 * Repository: https://github.com/nbedi/typecaster/
